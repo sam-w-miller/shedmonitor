@@ -32,4 +32,4 @@ The program is broken down into these sections:
 ## Scheduling
 I recommend using cron to schedule this code to run at regular intervals. For example, the entry to run every 5 minutes would look like:
 
-\*/5 \* \* \* \* cd/ \[folder where shedmonitor.py is stored\] && /usr/bin/python /\[folder where shedmonitor.py is stored\]/shedmonitor.py  
+\*/5 \* \* \* \* cd /\[folder where shedmonitor.py is stored\] && /usr/bin/python /\[folder where shedmonitor.py is stored\]/shedmonitor.py  
