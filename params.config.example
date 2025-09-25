@@ -1,2 +1,8 @@
 [Data_Location]
 directory = data
+
+[Logging]
+logfile = shedmonitor.log
+
+[Sensor]
+sleep = 1.0
