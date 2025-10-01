@@ -6,3 +6,17 @@ logfile = shedmonitor.log
 
 [Sensor]
 sleep = 1.0
+
+[Display]
+font_header_size = 14
+font_text_size = 11
+text_colour_r = 255
+text_colour_g = 255
+text_colour_b = 255
+back_colour_r = 0
+back_colour_g = 170
+back_colour_b = 170
+text_start = 16
+text_gap = 12
+label_x_position = 2
+value_x_position = 90
