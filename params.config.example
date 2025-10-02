@@ -3,6 +3,8 @@ directory = data
 
 [Logging]
 logfile = shedmonitor.log
+# To run on debugging, set this to 10
+logging_level = 50
 
 [Sensor]
 sleep = 1.0

@@ -38,6 +38,7 @@ config = configparser.ConfigParser()
 config.read("params.config")
 data_dir = config.get("Data_Location", "directory", fallback="data")
 log_file = config.get("Logging", "logfile", fallback="shedmonitor.log")
+logging_level = config.getint("Logging", "logging_level", fallback=50)
 sensor_sleep = config.getfloat("Sensor", "sleep", fallback=1.0)
 font_header_size = config.getint("Display", "font_header_size", fallback=14)
 font_text_size = config.getint("Display", "font_text_size", fallback=11)
@@ -53,7 +54,7 @@ label_x_position = config.getint("Display", "label_x_position", fallback=2)
 value_x_position = config.getint("Display", "value_x_position", fallback=90)
 
 # Setup logging
-logging.basicConfig(filename=log_file, encoding="utf-8", format="%(asctime)s %(levelname)s %(message)s", level=logging.DEBUG)
+logging.basicConfig(filename=log_file, encoding="utf-8", format="%(asctime)s %(levelname)s %(message)s", level=logging_level)
 logger = logging.getLogger(__name__)
 logger.debug("Starting shedmonitor.py")
 
